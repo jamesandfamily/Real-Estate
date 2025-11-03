@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern real estate portfolio with immersive 3D experiences"
+    />
+    <title>Real Estate Portfolio</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="webgl-canvas"></canvas>
+
+      <main>
+        <section class="hero">
+          <h1>Welcome to Our Portfolio</h1>
+          <p>Explore stunning properties with immersive 3D experiences</p>
+        </section>
+
+        <section class="properties">
+          <h2>Featured Properties</h2>
+          <div class="properties-grid">
+            <!-- Properties will be dynamically loaded -->
+          </div>
+        </section>
+
+        <section class="gallery">
+          <h2>Gallery</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Gallery slides will be dynamically loaded -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

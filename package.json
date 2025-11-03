@@ -1,0 +1,44 @@
+{
+  "name": "real-estate-portfolio",
+  "version": "1.0.0",
+  "description": "Modern real estate portfolio website with Three.js and smooth animations",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesandfamily/Real-Estate.git"
+  },
+  "keywords": [
+    "real-estate",
+    "threejs",
+    "portfolio",
+    "vite",
+    "gsap"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesandfamily/Real-Estate/issues"
+  },
+  "homepage": "https://github.com/jamesandfamily/Real-Estate#readme",
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "modern-normalize": "^3.0.1",
+    "swiper": "^12.0.3",
+    "three": "^0.181.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "eslint": "^9.39.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.1.12"
+  }
+}
