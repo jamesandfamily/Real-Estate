@@ -6,6 +6,9 @@
   transition:
     transform var(--transition-speed),
     box-shadow var(--transition-speed);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .property-card:hover {
@@ -21,22 +24,55 @@
 
 .property-card-content {
   padding: var(--spacing-md);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .property-card h3 {
   margin-bottom: var(--spacing-sm);
   color: var(--color-primary);
+  font-size: 1.25rem;
 }
 
 .property-card p {
   color: var(--color-text-light);
   margin-bottom: var(--spacing-sm);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  flex: 1;
 }
 
 .property-card-price {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-accent);
+  margin-top: auto;
+  padding-top: var(--spacing-sm);
+}
+
+.property-card-details {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-sm) 0;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  flex-wrap: wrap;
+}
+
+.property-card-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: var(--spacing-sm);
+}
+
+.property-card-feature {
+  background: var(--color-bg-alt);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: var(--color-secondary);
 }
 
 .swiper-container {
@@ -47,15 +83,43 @@
 
 .swiper-slide {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: var(--color-bg-alt);
+  position: relative;
 }
 
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  padding: var(--spacing-md);
+  transform: translateY(100%);
+  transition: transform var(--transition-speed);
+}
+
+.swiper-slide:hover .gallery-caption {
+  transform: translateY(0);
+}
+
+.gallery-caption h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-caption p {
+  font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 .swiper-button-prev,
