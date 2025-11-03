@@ -105,6 +105,22 @@ Format code with Prettier:
 npm run format
 ```
 
+## 🎨 Placeholder Content
+
+**⚠️ IMPORTANT**: This project currently uses AI-generated placeholder content and images from external services (Unsplash, Pravatar). This content is meant to be replaced with your actual property data and images.
+
+See `PLACEHOLDER_CONTENT.md` for detailed information about:
+- What content needs to be replaced
+- Image sources and specifications
+- How to replace with your own content
+
+### Quick Overview
+
+- **8 Properties**: With AI-generated descriptions and Unsplash images
+- **12 Gallery Items**: Professional real estate photography from Unsplash
+- **About Data**: Company info, team profiles, services, testimonials (all placeholder)
+- **3D Models**: See `3D_MODELS_GUIDE.md` for sourcing free architectural models
+
 ## 📁 Asset Handling
 
 Vite is configured to handle the following asset types:

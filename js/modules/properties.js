@@ -30,12 +30,36 @@ const createPropertyCard = (property) => {
   const description = document.createElement('p');
   description.textContent = property.description;
 
+  const details = document.createElement('div');
+  details.className = 'property-card-details';
+  details.innerHTML = `
+    <span>${property.bedrooms} Beds</span> • 
+    <span>${property.bathrooms} Baths</span> • 
+    <span>${property.sqft.toLocaleString()} sqft</span>
+  `;
+
+  if (property.features && property.features.length > 0) {
+    const featuresContainer = document.createElement('div');
+    featuresContainer.className = 'property-card-features';
+    property.features.forEach((feature) => {
+      const featureTag = document.createElement('span');
+      featureTag.className = 'property-card-feature';
+      featureTag.textContent = feature;
+      featuresContainer.appendChild(featureTag);
+    });
+    content.appendChild(title);
+    content.appendChild(description);
+    content.appendChild(details);
+    content.appendChild(featuresContainer);
+  } else {
+    content.appendChild(title);
+    content.appendChild(description);
+    content.appendChild(details);
+  }
+
   const price = document.createElement('div');
   price.className = 'property-card-price';
   price.textContent = property.price;
-
-  content.appendChild(title);
-  content.appendChild(description);
   content.appendChild(price);
 
   card.appendChild(img);
